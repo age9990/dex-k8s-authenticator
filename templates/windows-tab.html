@@ -83,6 +83,7 @@
     </button>
   <pre><code>kubectl config set-cluster {{ .ClusterName }}
     {{- if or .K8sCaPem .K8sCaURI }} --certificate-authority=%USERPROFILE%/.kube/certs/{{ .ClusterName}}/k8s-ca.crt
+    {{- else }} --insecure-skip-tls-verify=true
     {{- end }} --server={{ .K8sMasterURI }}</code></pre>
   </div>
 
