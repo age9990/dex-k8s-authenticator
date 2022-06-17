@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dex-k8s-authenticator:$(date +%s)
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_HUB_USER}}/dex-k8s-authenticator:$(date +%s)
     - name: Docker Hub login
       env:
         DOCKER_HUB_USER: ${{secrets.DOCKER_HUB_USER}}
