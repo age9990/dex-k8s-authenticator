@@ -99,7 +99,7 @@ type Config struct {
 }
 
 func substituteEnvVars(text string) string {
-	re := regexp.MustCompile(`\${([a-zA-Z0-9\-_]+)}`)
+	re := regexp.MustCompile(`\${([a-zA-Z0-9\-_\.]+)}`)
 	matches := re.FindAllStringSubmatch(text, -1)
 	for _, val := range matches {
 		envVar := os.Getenv(val[1])
