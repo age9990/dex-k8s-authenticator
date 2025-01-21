@@ -1,4 +1,4 @@
-FROM golang:1.16.4-alpine3.13
+FROM golang:1.23.5-alpine3.21
 
 RUN apk add --no-cache --update alpine-sdk bash
 
@@ -15,7 +15,7 @@ COPY . .
 
 RUN make build
 
-FROM alpine:3.13.5
+FROM alpine:3.21.2
 
 # Dex connectors, such as GitHub and Google logins require root certificates.
 # Proper installations should manage those certificates, but it's a bad user
