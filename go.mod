@@ -1,13 +1,12 @@
 module github.com/mintel/dex-k8s-authenticator
 
 go 1.23
-
 require (
 	github.com/coreos/go-oidc v2.3.0+incompatible
 	github.com/spf13/cast v1.7.1
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.19.0
-	golang.org/x/oauth2 v0.26.0
+	golang.org/x/oauth2 v0.27.0
 )
 
 require (
