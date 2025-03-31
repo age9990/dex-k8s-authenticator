@@ -7,7 +7,7 @@ require (
 	github.com/coreos/go-oidc v2.3.0+incompatible
 	github.com/spf13/cast v1.7.1
 	github.com/spf13/cobra v1.9.1
-	github.com/spf13/viper v1.20.0
+	github.com/spf13/viper v1.20.1
 	golang.org/x/oauth2 v0.28.0
 )
 
