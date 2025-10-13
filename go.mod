@@ -6,7 +6,7 @@ toolchain go1.24.1
 
 require (
 	github.com/coreos/go-oidc v2.4.0+incompatible
-	github.com/spf13/cast v1.9.2
+	github.com/spf13/cast v1.10.0
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/viper v1.20.1
 	golang.org/x/oauth2 v0.31.0
