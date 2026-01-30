@@ -5,7 +5,7 @@ go 1.24.0
 toolchain go1.24.1
 
 require (
-	github.com/coreos/go-oidc v2.4.0+incompatible
+	github.com/coreos/go-oidc v2.5.0+incompatible
 	github.com/spf13/cast v1.10.0
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/viper v1.21.0
