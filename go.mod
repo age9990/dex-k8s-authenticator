@@ -1,6 +1,6 @@
 module github.com/mintel/dex-k8s-authenticator
 
-go 1.25.0
+go 1.26.0
 
 require (
 	github.com/coreos/go-oidc v2.5.0+incompatible
